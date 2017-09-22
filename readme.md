@@ -3,13 +3,13 @@
 ## Build
 
 ```
-docker build -t travis .
+docker build -t travis:local .
 ```
 
 ## Run
 
 ```
-docker run -v $PWD:/build travis travis encrypt valuetobeencrypted
+docker run -v $PWD:/build travis:local travis encrypt valuetobeencrypted
 ```
 
 ## License
